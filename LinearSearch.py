@@ -1,8 +1,8 @@
-
+import random
 
 # Searching algorithms - Linear Search
 
-def linearSearch(array, value):
+def linear_search(array, value):
     for i in range(len(array)):
         if array[i] == value:
             return i
@@ -10,4 +10,9 @@ def linearSearch(array, value):
 
 
 
-print(linearSearch([20,40,30,50,90], 90))
+#Generate 100 random numbers between 1 and 1000
+randomlist = random.sample(range(1, 1000), 100)
+randomlist.sort()
+print(randomlist)
+a = int(input())
+print(linear_search(randomlist,a))
